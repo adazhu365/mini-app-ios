@@ -14,9 +14,9 @@ class BucketItem {
     var description: String
     var latitude: Int
     var longitude: Int
-    var date: String
+    var date: Date
     
-    init(name: String, description: String, latitude: Int, longitude: Int, date:String) {
+    init(name: String, description: String, latitude: Int, longitude: Int, date:Date) {
         self.name = name
         self.description = description
         self.latitude = latitude
