@@ -7,11 +7,13 @@
 //
 
 import Foundation
-
 import UIKit
 
-class NoteTableViewCell: UITableViewCell {
+class BucketListTableViewCell: UITableViewCell {
     
+    
+    @IBOutlet weak var DateLabel: UILabel!
+    @IBOutlet weak var ItemNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

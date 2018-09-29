@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EA279E52215FF3B200E8A2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E51215FF3B200E8A2E7 /* AppDelegate.swift */; };
-		EA279E54215FF3B200E8A2E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E53215FF3B200E8A2E7 /* ViewController.swift */; };
+		EA279E54215FF3B200E8A2E7 /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E53215FF3B200E8A2E7 /* BucketListTableViewController.swift */; };
 		EA279E57215FF3B200E8A2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA279E55215FF3B200E8A2E7 /* Main.storyboard */; };
 		EA279E59215FF3B400E8A2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA279E58215FF3B400E8A2E7 /* Assets.xcassets */; };
 		EA279E5C215FF3B400E8A2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA279E5A215FF3B400E8A2E7 /* LaunchScreen.storyboard */; };
 		EA279E67215FF3B400E8A2E7 /* uvabucketlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E66215FF3B400E8A2E7 /* uvabucketlistTests.swift */; };
 		EA279E72215FF3B400E8A2E7 /* uvabucketlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E71215FF3B400E8A2E7 /* uvabucketlistUITests.swift */; };
 		EA279E80215FF95D00E8A2E7 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E7F215FF95D00E8A2E7 /* BucketItem.swift */; };
-		EA279E82216006DC00E8A2E7 /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E81216006DC00E8A2E7 /* BucketListTableViewCell.swift */; };
+		EA279E8421600E8B00E8A2E7 /* BucketListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E8321600E8B00E8A2E7 /* BucketListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		EA279E4E215FF3B200E8A2E7 /* uvabucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uvabucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA279E51215FF3B200E8A2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA279E53215FF3B200E8A2E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA279E53215FF3B200E8A2E7 /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
 		EA279E56215FF3B200E8A2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA279E58215FF3B400E8A2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA279E5B215FF3B400E8A2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		EA279E71215FF3B400E8A2E7 /* uvabucketlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uvabucketlistUITests.swift; sourceTree = "<group>"; };
 		EA279E73215FF3B400E8A2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA279E7F215FF95D00E8A2E7 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
-		EA279E81216006DC00E8A2E7 /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
+		EA279E8321600E8B00E8A2E7 /* BucketListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				EA279E51215FF3B200E8A2E7 /* AppDelegate.swift */,
-				EA279E53215FF3B200E8A2E7 /* ViewController.swift */,
+				EA279E53215FF3B200E8A2E7 /* BucketListTableViewController.swift */,
 				EA279E55215FF3B200E8A2E7 /* Main.storyboard */,
 				EA279E58215FF3B400E8A2E7 /* Assets.xcassets */,
 				EA279E5A215FF3B400E8A2E7 /* LaunchScreen.storyboard */,
 				EA279E5D215FF3B400E8A2E7 /* Info.plist */,
 				EA279E7F215FF95D00E8A2E7 /* BucketItem.swift */,
-				EA279E81216006DC00E8A2E7 /* BucketListTableViewCell.swift */,
+				EA279E8321600E8B00E8A2E7 /* BucketListTableViewCell.swift */,
 			);
 			path = uvabucketlist;
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA279E80215FF95D00E8A2E7 /* BucketItem.swift in Sources */,
-				EA279E82216006DC00E8A2E7 /* BucketListTableViewCell.swift in Sources */,
-				EA279E54215FF3B200E8A2E7 /* ViewController.swift in Sources */,
+				EA279E8421600E8B00E8A2E7 /* BucketListTableViewCell.swift in Sources */,
+				EA279E54215FF3B200E8A2E7 /* BucketListTableViewController.swift in Sources */,
 				EA279E52215FF3B200E8A2E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
