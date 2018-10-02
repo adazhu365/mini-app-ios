@@ -10,6 +10,9 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var itemName: UITextField!
+    @IBOutlet weak var Description: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
