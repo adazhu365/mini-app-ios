@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,12 +53,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="UVA Bucket List" id="LCG-NG-HZO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8JZ-ph-BVB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8JZ-ph-BVB">
+                            <connections>
+                                <segue destination="3Fl-XV-DJc" kind="show" id="bis-Y8-zls"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpF-Bc-adN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984.79999999999995" y="27.436281859070466"/>
+            <point key="canvasLocation" x="774" y="681"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="LMQ-iu-iZd">
+            <objects>
+                <viewController id="3Fl-XV-DJc" customClass="AddViewController" customModule="uvabucketlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0JM-YF-oJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="syE-kk-TjE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ord-gH-AKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="681"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F01-Na-jJ2">
