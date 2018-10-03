@@ -20,7 +20,7 @@ class AddItemViewController: UIViewController {
             let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: 12, longitude: 2, date: Date())
             BucketList += [item10]
         }
-    }
+         navigationController?.popToRootViewController(animated: true)    }
     
     
     override func viewDidLoad() {
