@@ -8,9 +8,12 @@
 
 import UIKit
 
+var BucketList = [BucketItem]()
+
+
 class BucketListTableViewController: UITableViewController {
 
-    var BucketList = [BucketItem]()
+    @IBOutlet var myTableView: UITableView!
     
     func loadSampleItems() {
         let item1 = BucketItem(name: "item1", description: "ya", latitude: 12, longitude: 2, date: Date())
@@ -22,6 +25,10 @@ class BucketListTableViewController: UITableViewController {
         super.viewDidLoad()
         loadSampleItems()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myTableView.reloadData()
     }
     // Override to show how many lists there should be
     override func numberOfSections(in tableView: UITableView) -> Int {

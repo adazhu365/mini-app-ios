@@ -13,9 +13,15 @@ class AddItemViewController: UIViewController {
 
     @IBOutlet weak var ItemName: UITextField!
     @IBOutlet weak var Description: UITextField!
-    
-    
     @IBOutlet weak var DatePicker: UIDatePicker!
+    
+    @IBAction func addItem(_ sender: UIButton) {
+        if (ItemName.text != ""){
+            let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: 12, longitude: 2, date: Date())
+            BucketList += [item10]
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
