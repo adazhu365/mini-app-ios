@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="774" y="681"/>
         </scene>
-        <!--Add View Controller-->
+        <!--Add Item View Controller-->
         <scene sceneID="LMQ-iu-iZd">
             <objects>
-                <viewController id="3Fl-XV-DJc" customClass="AddViewController" customModule="uvabucketlist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Fl-XV-DJc" customClass="AddItemViewController" customModule="uvabucketlist" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0JM-YF-oJ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,11 +79,6 @@
                                     <!--2018-10-02 02:21:08 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrI-ZS-2JD" userLabel="Save">
-                                <rect key="frame" x="138" y="550" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Odq-nJ-OE3" userLabel="Name">
                                 <rect key="frame" x="75" y="126" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,13 +98,14 @@
                         <viewLayoutGuide key="safeArea" id="syE-kk-TjE"/>
                     </view>
                     <connections>
+                        <outlet property="DatePicker" destination="tgl-DJ-d5k" id="rn5-wS-Az1"/>
                         <outlet property="Description" destination="Bw0-bY-xzo" id="IVL-TR-RhU"/>
-                        <outlet property="saveItem" destination="Odq-nJ-OE3" id="2Tn-T2-RCQ"/>
+                        <outlet property="ItemName" destination="Odq-nJ-OE3" id="Hqy-b5-Esn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ord-gH-AKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="681"/>
+            <point key="canvasLocation" x="1461.5999999999999" y="680.5097451274363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F01-Na-jJ2">

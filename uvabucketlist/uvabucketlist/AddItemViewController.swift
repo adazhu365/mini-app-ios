@@ -8,18 +8,24 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddItemViewController: UIViewController {
 
-    @IBOutlet weak var itemName: UITextField!
+
+    @IBOutlet weak var ItemName: UITextField!
     @IBOutlet weak var Description: UITextField!
+    
+    
+    @IBOutlet weak var DatePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 

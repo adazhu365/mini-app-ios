@@ -103,7 +103,6 @@ class BucketListTableViewController: UITableViewController {
         
         return [done, edit]
     }
-
-
+    
 }
 
