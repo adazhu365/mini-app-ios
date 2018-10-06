@@ -15,9 +15,12 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var Description: UITextField!
     @IBOutlet weak var DatePicker: UIDatePicker!
     
+    @IBOutlet weak var Longitude: UITextField!
+    @IBOutlet weak var Latitude: UITextField!
     @IBAction func addItem(_ sender: UIButton) {
         if (ItemName.text != ""){
-            let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: 12, longitude: 2, date: Date())
+
+            let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: Int(Latitude.text!)!, longitude: Int(Longitude.text!)!, date: DatePicker.date)
             BucketList += [item10]
         }
          navigationController?.popToRootViewController(animated: true)    }

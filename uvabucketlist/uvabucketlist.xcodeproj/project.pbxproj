@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18052FD92162FA9F00583119 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18052FD82162FA9F00583119 /* AddItemViewController.swift */; };
+		EA0A471A21694669005174DB /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A471921694669005174DB /* EditItemViewController.swift */; };
 		EA279E52215FF3B200E8A2E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E51215FF3B200E8A2E7 /* AppDelegate.swift */; };
 		EA279E54215FF3B200E8A2E7 /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA279E53215FF3B200E8A2E7 /* BucketListTableViewController.swift */; };
 		EA279E57215FF3B200E8A2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA279E55215FF3B200E8A2E7 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		18052FD42162FA2500583119 /* uvabucketlist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uvabucketlist-Bridging-Header.h"; sourceTree = "<group>"; };
 		18052FD82162FA9F00583119 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		EA0A471921694669005174DB /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 		EA279E4E215FF3B200E8A2E7 /* uvabucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uvabucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA279E51215FF3B200E8A2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA279E53215FF3B200E8A2E7 /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				EA279E8321600E8B00E8A2E7 /* BucketListTableViewCell.swift */,
 				18052FD42162FA2500583119 /* uvabucketlist-Bridging-Header.h */,
 				18052FD82162FA9F00583119 /* AddItemViewController.swift */,
+				EA0A471921694669005174DB /* EditItemViewController.swift */,
 			);
 			path = uvabucketlist;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18052FD92162FA9F00583119 /* AddItemViewController.swift in Sources */,
+				EA0A471A21694669005174DB /* EditItemViewController.swift in Sources */,
 				EA279E80215FF95D00E8A2E7 /* BucketItem.swift in Sources */,
 				EA279E8421600E8B00E8A2E7 /* BucketListTableViewCell.swift in Sources */,
 				EA279E54215FF3B200E8A2E7 /* BucketListTableViewController.swift in Sources */,
