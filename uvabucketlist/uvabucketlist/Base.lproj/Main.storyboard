@@ -44,7 +44,7 @@
                                 <connections>
                                     <outlet property="DateLabel" destination="Qxl-Wb-kQb" id="Y9L-3U-xVD"/>
                                     <outlet property="ItemNameLabel" destination="FgX-30-xaQ" id="rz4-RH-kiQ"/>
-                                    <segue destination="Inw-Oc-Qse" kind="show" id="SIZ-8W-eX8"/>
+                                    <segue destination="Inw-Oc-Qse" kind="show" identifier="EditItemSegue" id="SIZ-8W-eX8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

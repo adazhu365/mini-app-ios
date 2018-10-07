@@ -102,7 +102,7 @@ class BucketListTableViewController: UITableViewController {
         done.backgroundColor = .green
         
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
-            
+            self.performSegue(withIdentifier: "EditItemSegue", sender: EditItemViewController())
         }
         
         edit.backgroundColor = .orange
@@ -110,8 +110,14 @@ class BucketListTableViewController: UITableViewController {
         
         return [done, edit]
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
+        if (segue.identifier == "EditItemSegue"){
+            if let destinationVC = segue.destination as? EditItemViewController {
+                //destinationVC.Name = BucketList[1].name
+                print("yes")
+
+            }
+            
+        }    }}
 
 
