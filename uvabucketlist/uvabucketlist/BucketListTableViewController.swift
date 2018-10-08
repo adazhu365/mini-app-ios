@@ -14,7 +14,7 @@ var BucketList = [BucketItem]()
 class BucketListTableViewController: UITableViewController {
 
     @IBOutlet var myTableView: UITableView!
-    
+    var indexofitem = 1
     func loadSampleItems() {
         let item1 = BucketItem(name: "item1", description: "ya", latitude: 12, longitude: 2, date: Date())
         BucketList += [item1]
@@ -65,6 +65,7 @@ class BucketListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let index = indexPath[1]
         let currentItem = BucketList[index]
+        self.indexofitem = indexPath.row
         let alertController = UIAlertController(title: currentItem.name, message: currentItem.description + "\nsaved at: " + currentItem.date.description, preferredStyle: .alert)
         
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -102,6 +103,7 @@ class BucketListTableViewController: UITableViewController {
         done.backgroundColor = .green
         
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            self.indexofitem = editActionsForRowAt.row
             self.performSegue(withIdentifier: "EditItemSegue", sender: EditItemViewController())
         }
         
@@ -114,8 +116,10 @@ class BucketListTableViewController: UITableViewController {
         if (segue.identifier == "EditItemSegue"){
             if let destinationVC = segue.destination as? EditItemViewController {
                 //destinationVC.Name = BucketList[1].name
-                print("yes")
-
+                let f = BucketList[indexofitem]
+                destinationVC.edit = f
+                destinationVC.index = indexofitem
+                
             }
             
         }    }}
