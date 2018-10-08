@@ -24,12 +24,15 @@ class BucketListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadSampleItems()
+        BucketList = BucketList.sorted(by: {
+            $0.date.compare($1.date) == .orderedAscending })
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         myTableView.reloadData()
-    }
+        BucketList = BucketList.sorted(by: {
+            $0.date.compare($1.date) == .orderedAscending })    }
     // Override to show how many lists there should be
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
