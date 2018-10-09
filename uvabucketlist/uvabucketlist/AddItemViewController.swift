@@ -20,7 +20,7 @@ class AddItemViewController: UIViewController {
     @IBAction func addItem(_ sender: UIButton) {
         if (ItemName.text != ""){
 
-            let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: Int(Latitude.text!)!, longitude: Int(Longitude.text!)!, date: DatePicker.date)
+            let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: Float(Latitude.text!)!, longitude: Float(Longitude.text!)!, date: DatePicker.date)
             BucketList += [item10]
         }
          navigationController?.popToRootViewController(animated: true)    }

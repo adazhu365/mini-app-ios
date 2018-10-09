@@ -17,15 +17,15 @@ class EditItemViewController: UIViewController {
     @IBOutlet weak var Date: UIDatePicker!
     var nametxt:String?
     var desctxt:String?
-    var Latiint:Int?
-    var Longint:Int?
+    var Latiint:Float?
+    var Longint:Float?
     var Dateday:Date?
     var index:Int?
     var edit:BucketItem?
     @IBAction func Save(_ sender: Any) {
         if (edit!.name != ""){
             BucketList.remove(at: index!)
-            edit = BucketItem(name:Name.text!,description: Description.text!, latitude: Int(Latitude.text!)!, longitude: Int(Longitude.text!)!, date: Date.date)
+            edit = BucketItem(name:Name.text!,description: Description.text!, latitude: Float(Latitude.text!)!, longitude: Float(Longitude.text!)!, date: Date.date)
             BucketList += [edit!]
         }
         navigationController?.popToRootViewController(animated: true)    }
