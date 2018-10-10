@@ -2,11 +2,14 @@
 
 Guangda Zhu & Siteng Zhang
 
-Device Name
-Project/App Title
+Device Name: iphone 5s
 
-Basic instructions on usage
-Any special info we need to run the app
+Project/App Title: iosbucket app
+
+Basic instructions on usage:
+
+Any special info we need to run the app:
+
 Lessons learned (at least half a page)
 
 
