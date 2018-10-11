@@ -15,6 +15,8 @@ class BucketItem {
     var latitude: Float
     var longitude: Float
     var date: Date
+    var done: Bool
+
     
     init(name: String, description: String, latitude: Float, longitude: Float, date:Date) {
         self.name = name
@@ -22,6 +24,8 @@ class BucketItem {
         self.latitude = latitude
         self.longitude = longitude
         self.date = date
+        self.done = false
+
     }
     
 }

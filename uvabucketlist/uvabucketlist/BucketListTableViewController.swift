@@ -28,11 +28,20 @@ class BucketListTableViewController: UITableViewController {
             $0.date.compare($1.date) == .orderedAscending })
         // Do any additional setup after loading the view, typically from a nib.
     }
+    func sorttable(){
+        
+        BucketList.sort(by: {$0.date < $1.date})
+        BucketList.sort{!$0.done && $1.done}
+        tableView.reloadData()
+        
+    }
     
     override func viewDidAppear(_ animated: Bool) {
-        myTableView.reloadData()
-        BucketList = BucketList.sorted(by: {
-            $0.date.compare($1.date) == .orderedAscending })    }
+        self.sorttable()
+        
+    }
+    
+    
     // Override to show how many lists there should be
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -60,6 +69,13 @@ class BucketListTableViewController: UITableViewController {
         dateFormatter.dateStyle = .short
         let convertedDate = dateFormatter.string(from: item.date)
         cell.DateLabel.text = convertedDate
+        
+        if (item.done) {
+            cell.backgroundColor = .lightGray
+        }
+        else{
+            cell.backgroundColor = .white
+        }
         
         return cell
     }
@@ -100,7 +116,10 @@ class BucketListTableViewController: UITableViewController {
     // Lets you add various buttons when you swipe
     override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         let done = UITableViewRowAction(style: .normal, title: "Done") { action, index in
-            
+            let doneItem = BucketList[index.row]
+            let tempStatus = doneItem.done
+            doneItem.done = !tempStatus
+            self.sorttable()
             
         }
         done.backgroundColor = .green
@@ -108,7 +127,9 @@ class BucketListTableViewController: UITableViewController {
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
             self.indexofitem = editActionsForRowAt.row
             self.performSegue(withIdentifier: "EditItemSegue", sender: EditItemViewController())
+            
         }
+
         
         edit.backgroundColor = .orange
         
