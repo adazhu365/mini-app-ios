@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="774" y="681"/>
         </scene>
-        <!--Edit Item View Controller-->
+        <!--Title-->
         <scene sceneID="dbm-LR-8ME">
             <objects>
                 <viewController id="Inw-Oc-Qse" customClass="EditItemViewController" customModule="uvabucketlist" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,14 +104,6 @@
                                     <!--2018-10-06 20:02:51 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKr-dh-gpb">
-                                <rect key="frame" x="170" y="552" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="Save:" destination="Inw-Oc-Qse" eventType="touchUpInside" id="zTO-Dn-Zur"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-Ir-1m1">
                                 <rect key="frame" x="38" y="113" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -151,6 +143,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="i9O-fB-Xva"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="3ro-wm-8os">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="gzw-Kw-p9o">
+                            <connections>
+                                <action selector="saveItem:" destination="Inw-Oc-Qse" id="TCt-gV-m4D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Date" destination="mUK-Sz-QRS" id="B0b-i4-QpD"/>
                         <outlet property="Description" destination="DyC-Ph-poX" id="0Dm-Qw-qyV"/>

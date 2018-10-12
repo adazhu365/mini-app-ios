@@ -23,22 +23,17 @@ class EditItemViewController: UIViewController {
     var index:Int?
     var edit:BucketItem?
     
-
-    @IBAction func Save(_ sender: Any) {
-        
-        
+    @IBAction func saveItem(_ sender: UIBarButtonItem) {
         if (edit!.name != ""){
             BucketList.remove(at: index!)
             edit = BucketItem(name:Name.text!,description: Description.text!, latitude: Float(Latitude.text!)!, longitude: Float(Longitude.text!)!, date: Date.date)
             BucketList += [edit!]
         }
         
-        
-        navigationController?.popToRootViewController(animated: true)
-        
-        
+         navigationController?.popToRootViewController(animated: true)
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
