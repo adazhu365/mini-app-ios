@@ -137,6 +137,10 @@ class BucketListTableViewController: UITableViewController {
         return [done, edit]
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Cancel"
+        navigationItem.backBarButtonItem = backItem
+        
         if (segue.identifier == "EditItemSegue"){
             if let destinationVC = segue.destination as? EditItemViewController {
                 //destinationVC.Name = BucketList[1].name
