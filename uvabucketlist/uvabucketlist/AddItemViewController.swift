@@ -17,13 +17,17 @@ class AddItemViewController: UIViewController {
     
     @IBOutlet weak var Longitude: UITextField!
     @IBOutlet weak var Latitude: UITextField!
-    @IBAction func addItem(_ sender: UIButton) {
+    
+    @IBAction func saveItem(_ sender: UIBarButtonItem) {
+        
         if (ItemName.text != ""){
-
+            
             let item10 = BucketItem(name:ItemName.text!,description: Description.text!, latitude: Float(Latitude.text!)!, longitude: Float(Longitude.text!)!, date: DatePicker.date)
             BucketList += [item10]
         }
-         navigationController?.popToRootViewController(animated: true)    }
+        
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     
     override func viewDidLoad() {

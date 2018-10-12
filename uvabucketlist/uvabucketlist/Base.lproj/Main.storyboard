@@ -163,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="761" y="1303"/>
         </scene>
-        <!--Add Item View Controller-->
+        <!--Title-->
         <scene sceneID="LMQ-iu-iZd">
             <objects>
                 <viewController id="3Fl-XV-DJc" customClass="AddItemViewController" customModule="uvabucketlist" sceneMemberID="viewController">
@@ -234,19 +234,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZn-Xb-pvh">
-                                <rect key="frame" x="67" y="538" width="54" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="addItem:" destination="3Fl-XV-DJc" eventType="touchUpInside" id="TCw-Xy-rff"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="syE-kk-TjE"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="3sp-XD-zUn">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="4sm-Dy-xcN" userLabel="Save">
+                            <connections>
+                                <action selector="saveItem:" destination="3Fl-XV-DJc" id="fiS-mD-Vtp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="DatePicker" destination="tgl-DJ-d5k" id="rn5-wS-Az1"/>
                         <outlet property="Description" destination="Bw0-bY-xzo" id="IVL-TR-RhU"/>
